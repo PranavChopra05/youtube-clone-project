@@ -1,0 +1,321 @@
+.thumbnailsize{
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 20px;
+    background-color: rgb(251, 251, 251);
+}
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+
+    border-bottom-width: 1px ;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    box-shadow: 0px 0.5px 20px rgba(0,0,0,0.055);
+    z-index: 1;
+
+}
+.notif-contain{
+    position: relative;
+}
+.numbernotif{
+    position: absolute;
+    top: -2px;
+    right: 20px;
+
+    font-family: Roboto;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(202, 34, 34);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+    font-weight: 400;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 55px;
+    bottom: 0;
+    width: 72px;
+    background-color: white;
+}
+.sidebar-link{
+    background-color: white;
+    height: 76px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-link:hover{
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+}
+.sidebar-pics{
+    height: 24px;
+    margin-bottom: 6px;
+}
+.sidebar-text{
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+}
+.left-section{
+    width: 162px;
+}
+.menupic{
+    height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ytlogo{
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 20px;
+    margin: 0;
+}
+.mid-section{
+    flex: 1;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    align-items: center;
+    margin-right: 30px;
+}
+.search{
+    max-width: 339px;
+    height: 36px;
+    border-width: 0.800;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+    border: 1px solid lightgray;
+    border-radius: 2px;   
+    flex: 1;
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.1);
+    width: 0;
+
+}
+.search::placeholder{
+    font-family: roboto;
+    font-size: 16px;}
+.searchbutton{
+    height: 39px;
+    border-width: 0.800;
+    border: 1px solid lightgray;
+    width: 64px;
+    padding-right:6px;
+    padding-left: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 2px;
+    background-color: rgb(246, 246, 246);
+    margin-left: -3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    }
+.search-icon{
+    height: 24px;
+}
+.searchbutton .tooltip , .voicesearch .tooltip, .rightsec1 .tooltip , .rightsec2 .tooltip, .rightsec3 .tooltip, .rightsec4 .tooltip{
+    position: absolute;
+    background-color: rgb(110, 109, 109);
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.searchbutton:hover .tooltip , .voicesearch:hover .tooltip, .rightsec1:hover .tooltip, .rightsec2:hover .tooltip, .rightsec3:hover .tooltip, .rightsec4:hover .tooltip{
+    position: absolute;
+    background-color: rgb(110, 109, 109);
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+.voice{
+    height: 24px;
+}
+.voicesearch{
+    height: 40px;
+    border: none;
+    width: 40px;
+    padding-right:6px;
+    padding-left: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 40px;
+    margin-left: 8px;
+    background-color: rgb(246, 246, 246);
+
+}
+.rightsec1 .tooltip{
+    right: 14px;
+}
+.rightsec2 .tooltip{
+    right: 16px;
+}
+.rightsec3 .tooltip{
+    right: -2px;
+}
+.searchbutton, .voicesearch, .rightsec1, .rightsec2, .rightsec3, .rightsec4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbutton:hover, .voicesearch:hover{
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+.rightsec1:hover ,.rightsec2:hover ,.rightsec3:hover ,.rightsec4:hover{
+    cursor: pointer;
+}
+.menupic:hover ,.ytlogo:hover{
+    cursor: pointer;
+}
+
+.right-section{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 25px;
+    align-items: center;
+}
+.rb{
+    height: 24px;
+    margin-right: 26px;
+    border: none;
+    
+}
+.rbx{
+    border-radius: 30px;
+    height: 30px;
+}
+
+.videogrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 850px){
+    .videogrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+}
+@media (min-width: 850px) and (max-width: 1120px){
+    .videogrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+}
+@media (min-width: 1120px){
+    .videogrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+}
+.video_preview{
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 1px;
+}
+.thumbnail-row{
+    position: relative;
+}
+.duration{
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+}
+
+.channel_pfp{
+    vertical-align: top;
+}
+.pfp-size{
+    width: 40px;
+    border-radius: 50px;
+}
+
+
+.video_title{
+    margin-top: 0px;
+    font-weight: 450;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.video_details,.channel_pfp{
+    margin-top: 5px;
+    font-family: roboto;
+}
+.video_author,.video_stats{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #606060;
+}
+.video_author{
+    margin-bottom: 4px;
+}
